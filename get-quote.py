@@ -7,9 +7,23 @@ def primary():
   quotes = f.readlines()
   f.close()
 
-  last = 13
+  last = 33
   rnd = random.randint(0, last)
   print(quotes[rnd])
+  
+  
+  
+def secondary():
+  #print("Keep it logically awesome.")
+
+  f = open("quotes.txt")
+  quotes = f.readlines()
+  f.close()
+
+  last = 33
+  rnd = random.randint(0, last)
+  print(quotes[rnd]) 
 
 if __name__== "__main__":
   primary()
+  secondary()
